@@ -14,7 +14,7 @@ app.get('/reset',function (req,res){
   data.count=0;
   res.render('my_first_ejs',data);
 });
-app.get('set/count', function(req,res) {
+app.get('/set/count', function(req,res) {
   if(req.query.count) data.count=req.query.count;
   res.render('my_first_ejs',data);
 });
